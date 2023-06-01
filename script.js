@@ -15,7 +15,7 @@ var countdown = setInterval(function(){
    var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
    
 
-    document.querySelector(".countdown").innerHTML = days + " D: " + hours + " H: "+minutes + " M: " + seconds + " S: "
+    document.querySelector(".countdown").innerHTML = days + " D: " + hours + " H: "+minutes + " M: " + seconds + " S "
     if(timeRemaining < 0){
         clearInterval(countdown);
         document.querySelector(".countdown").innerHTML = "Countdown has ended"
